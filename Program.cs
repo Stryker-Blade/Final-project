@@ -27,7 +27,7 @@ static class Program{
 
                 // Generate a random velocity for this object
                 var randomY = Random.Next(1, 4);
-                var Rocketspeed = Random.Next(3, 6);
+                var Rocketspeed = Random.Next(6, 9);
                 var randomX = Random.Next(1, 4);
                 
                 //Generating a random x coordinate for each object
@@ -65,6 +65,12 @@ static class Program{
                             Objects.Add(rock);
                             break;
                         case 4:
+                            rock = new Rock(15);
+                            rock.Position = position;
+                            rock.Velocity = new Vector2(0, randomY);
+                            Objects.Add(rock);
+                            break;
+                        case 5:
                             rock = new Rock(15);
                             rock.Position = position;
                             rock.Velocity = new Vector2(0, randomY);

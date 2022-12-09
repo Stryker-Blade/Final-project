@@ -65,7 +65,7 @@ class Gem: FallingObject{
     }
     public Gem(int size){
         Size = size;
-        pointvalue = -1;
+        pointvalue = -5;
     }
     public Rectangle CollisonGem(){
         return new Rectangle((int)Position.X, (int)Position.Y, Size, Size);
